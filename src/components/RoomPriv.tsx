@@ -32,9 +32,9 @@ export const RoomPriv = () => {
                 />
                 <button className="bg-white px-2 rounded-md text-black font-bold">Buscar</button>
             </div>
-            <div id="player">
+            <div id="player" className="w-full">
                 {roomCtx?.urlVideo && (
-                    <YouTube videoId={roomCtx?.urlVideo}/>
+                    <YouTube className="w-auto" videoId={roomCtx?.urlVideo}/>
                 )}
                 
             </div>
